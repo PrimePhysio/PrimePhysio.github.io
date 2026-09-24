@@ -67,7 +67,7 @@ footer .brand img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: 9px;
     padding: 10px 12px;
 
     border: none;
@@ -83,24 +83,11 @@ footer .brand img {
                 color 0.2s ease;
 }
 
-/* Small, neatly aligned arrows */
-.dropbtn span {
-    display: inline-block;
-    font-size: 15px;
-    line-height: 1;
-    transition: transform 0.2s ease;
-}
-
 /* Hover and active states */
 .dropbtn:hover,
 .dropdown.open .dropbtn {
     background: #eaf5f1;
     color: var(--teal);
-}
-
-/* Rotate arrow when open */
-.dropdown.open .dropbtn span {
-    transform: rotate(180deg);
 }
 
 /* Dropdown panel */
@@ -145,21 +132,26 @@ footer .brand img {
 
 /* Desktop hover and keyboard navigation */
 @media (min-width: 851px) {
+
+    /* Show dropdown panel */
     .dropdown:hover .dropdown-content,
     .dropdown:focus-within .dropdown-content {
         display: block;
     }
 
-    .dropdown:hover .dropbtn {
+    /* Highlight navigation button */
+    .dropdown:hover .dropbtn,
+    .dropdown:focus-within .dropbtn {
         background: #eaf5f1;
         color: var(--teal);
     }
 
-    .dropdown:hover .dropbtn span {
-        transform: rotate(180deg);
+    /* Rotate dropdown arrow */
+    .dropdown:hover .dropbtn .chevron,
+    .dropdown:focus-within .dropbtn .chevron {
+        transform: translateY(2px) rotate(225deg);
     }
 }
-
 /* Click-to-open dropdowns */
 .dropdown.open .dropdown-content {
     display: block;
@@ -183,6 +175,25 @@ footer .brand img {
         margin-top: 4px;
         box-shadow: none;
     }
+}
+
+/* Replace font arrows with CSS chevrons */
+.dropbtn .chevron {
+    display: block;
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+
+    border-right: 1.8px solid currentColor;
+    border-bottom: 1.8px solid currentColor;
+
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+/* Rotate arrow when dropdown opens */
+.dropdown.open .dropbtn .chevron {
+    transform: translateY(2px) rotate(225deg);
 }
 
 /* Keep headings visible when using navigation links */
