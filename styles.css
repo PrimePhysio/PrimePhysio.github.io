@@ -134,3 +134,8 @@ footer .brand img {
         display: block;
     }
 }
+
+/* Keep headings visible when using navigation links */
+[id] {
+    scroll-margin-top: 110px;
+}
