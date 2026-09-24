@@ -200,3 +200,50 @@ footer .brand img {
 [id] {
     scroll-margin-top: 110px;
 }
+
+/* CONTACT LINKS */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--ink);
+    width: fit-content;
+}
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--teal);
+    font-size: 23px;
+    transition: background 0.2s ease,
+                color 0.2s ease;
+}
+
+.contact-link strong {
+    display: block;
+    font-size: 14px;
+}
+
+.contact-link small {
+    display: block;
+    font-size: 13px;
+    color: var(--teal);
+}
+
+.contact-link:hover .contact-icon {
+    background: var(--teal);
+    color: #ffffff;
+}
