@@ -247,3 +247,10 @@ footer .brand img {
     background: var(--teal);
     color: #ffffff;
 }
+
+/* FOUR-COLUMN FOOTER */
+@media (min-width: 851px) {
+    .foot {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
