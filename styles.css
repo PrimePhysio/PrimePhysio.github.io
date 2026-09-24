@@ -2,8 +2,7 @@
 
 .brand img{display:block;width:245px;height:auto}.brand .mark{display:none}@media(max-width:520px){.brand img{width:205px}}
 
-
-/* Header logo */
+/* Desktop header logo */
 header .brand {
     display: flex;
     align-items: center;
@@ -12,17 +11,17 @@ header .brand {
 
 header .brand img {
     display: block;
-    width: auto;
-    height: auto;
-    max-width: 280px;
-    max-height: 95px;
+    width: 280px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
     object-fit: contain;
 }
 
-/* Mobile logo */
+/* Mobile header logo */
 @media (max-width: 768px) {
     header .brand img {
-        max-width: 190px;
-        max-height: 65px;
+        width: 190px !important;
+        max-width: 100% !important;
     }
 }
