@@ -20,7 +20,8 @@ header .brand img {
     display: block;
     width: 265px;
     height: auto;
-    max-height: 90px;
+    max-width: none;
+    max-height: none;
     object-fit: contain;
 }
 
