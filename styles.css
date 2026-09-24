@@ -2,26 +2,43 @@
 
 .brand img{display:block;width:245px;height:auto}.brand .mark{display:none}@media(max-width:520px){.brand img{width:205px}}
 
-/* Desktop header logo */
+/* Header layout */
+header .navwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+/* Logo container */
 header .brand {
     display: flex;
     align-items: center;
+    width: 240px;
+    height: 90px;
     flex-shrink: 0;
+    padding: 0;
+    margin: 0;
 }
 
+/* Logo image */
 header .brand img {
     display: block;
-    width: 280px !important;
-    height: auto !important;
-    max-width: none !important;
-    max-height: none !important;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
-/* Mobile header logo */
+/* Mobile */
 @media (max-width: 768px) {
-    header .brand img {
-        width: 190px !important;
-        max-width: 100% !important;
+    header .navwrap {
+        min-height: 80px;
+    }
+
+    header .brand {
+        width: 170px;
+        height: 65px;
     }
 }
