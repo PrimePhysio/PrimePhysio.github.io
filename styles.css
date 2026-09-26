@@ -300,3 +300,24 @@ footer .brand img {
     height: auto;
     object-fit: cover;
 }
+
+/* ONLINE BOOKING SECTION */
+
+.booking-section {
+    max-width: 760px;
+    text-align: center;
+}
+
+.booking-section .lead {
+    margin: 20px auto 30px;
+}
+
+.booking-help {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.booking-help a {
+    color: var(--teal);
+    font-weight: 700;
+}
