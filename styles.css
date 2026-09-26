@@ -254,3 +254,34 @@ footer .brand img {
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 }
+
+/* ABOUT SECTION IMPROVEMENTS */
+
+.about {
+    align-items: start;
+}
+
+.about h3 {
+    margin-top: 28px;
+    font-size: 21px;
+}
+
+.about .credentials {
+    margin-top: 30px;
+}
+
+.about .credentials div {
+    padding: 16px;
+}
+
+.about .credentials span {
+    display: block;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+@media (min-width: 851px) {
+    .about .credentials {
+        grid-template-columns: 1fr;
+    }
+}
