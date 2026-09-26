@@ -285,3 +285,18 @@ footer .brand img {
         grid-template-columns: 1fr;
     }
 }
+
+/* ABOUT SECTION PHOTOGRAPH */
+
+.about .photo {
+    overflow: hidden;
+    padding: 0;
+    border-radius: 16px;
+}
+
+.about .photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
